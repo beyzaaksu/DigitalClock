@@ -1,0 +1,66 @@
+/*to remove default margin and to bring everything to the center*/
+body{
+    margin: 0; /*remove default margin*/
+    font-family: sans-serif;
+    display: flex; /*bring everything to the center horizontally*/
+    flex-direction: column; /*bring them as a column*/
+    align-items: center; /*bring everything to the center horizontally*/
+    /*to bring everything center vertically setting body to the heights of screens*/
+    height:100vh ; /*to set hundred of percent of the viewport heights*/
+    justify-content: center; /*to bring everything to center vertically*/
+    background: url("https://images.unsplash.com/photo-1533371452382-d45a9da51ad9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80"); /*to add a background image*/
+    background-size:cover ; /*to fit background image to screen better*/
+    overflow: hidden; /*to hide scroll-bar and to stop overflow*/
+}
+
+h2{
+    text-transform: uppercase; /*to make everything capitilazed*/
+    letter-spacing: 4px; /*spaces between letters*/
+    font-size: 14px;
+    text-align: center; /*bring it to the center*/
+    color: beige;
+}
+
+.clock{
+    display: flex; /*bring everything next to each other*/
+}
+
+.clock div{
+    margin: 5px; /*to make everything a little bit seperated*/
+    position: relative; /*to fix position of AM*/
+}
+
+.clock span{
+    width: 100px;
+    height: 80px;
+    background-color: slateblue;
+    opacity: 0.7;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:3em; /*we don't give px unit for this because many browsers don't support it in that way*/
+    text-shadow: 2px 2px 4px rgba(0,0,0,.3);
+
+}
+
+.clock .text{
+    height: 30px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: rgb(78, 2, 149);
+    opacity: 0.8;
+
+}
+
+/*to fix size and position of AM/PM */
+.clock #ampm{
+    bottom: 0;
+    position: absolute; /*to bring it to bottom*/
+    width: 60px;
+    height: 30px;
+    font-size: 20px;
+    background: rgb(78, 2, 149) ;
+}
+
